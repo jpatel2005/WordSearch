@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Word Search</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/png" href="icon.png" />
+    </head>
+    <body>
+        <h1>Word Search Puzzle</h1>
+        <div class="how-to-play">
+            <h2>How to Play</h2>
+            <ul>
+                <li>Click and drag across the grid to select letters.</li>
+                <li>You can select words in all 8 directions.</li>
+                <li>Found words will be crossed out in the word list.</li>
+                <li>Letters may contribute to multiple words.</li>
+            </ul>
+        </div>
+        <div class="container">
+            <div>
+                <div class="grid" id="grid"></div>
+                <div class="result-container">
+                    <div id="result" class="result-box"></div>
+                </div>
+            </div>
+            <div class="word-list">
+                <h2>Words to Find</h2>
+                <h5>Remaining: 50</h5>
+                <ul id="words-to-find"></ul>
+            </div>
+        </div>
+        <script type="module" src="script.js"></script>
+    </body>
+</html>
