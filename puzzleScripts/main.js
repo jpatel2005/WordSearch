@@ -186,7 +186,7 @@ const run = function(n, logging, fails = 0) {
         while (obj.spacesUsed < desiredSpaces && used.length < trie.size) {
             const [x,y,d,minLen,maxLen] = getRandomStartingState(grid, dirMap, interFreq);
             // attempt to generate additional word
-            if (x === null || generatePuzzleWord(trie, grid, x, y, used, dirMap, interFreq, wordPos, obj, d, minLen, maxLen)) {
+            if (x !== null && generatePuzzleWord(trie, grid, x, y, used, dirMap, interFreq, wordPos, obj, d, minLen, maxLen)) {
                 failCnt = 0;
             } else {
                 failCnt++;
